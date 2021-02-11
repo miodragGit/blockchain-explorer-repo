@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Index
+        link(rel="stylesheet", href="/css/main.css")
+    body
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a.active(href="/index") Go back to search
+        main
+            h2 Transaction info
+            table(style='width:50%', border='1')
+                tr
+                    td ver
+                    td #{txInfo.ver}
+                tr
+                    td weight
+                    td #{txInfo.weight}
+                tr
+                    td relayed_by
+                    td #{txInfo.relayed_by}
+                tr
+                    td lock_time
+                    td #{txInfo.lock_time}
+                tr
+                    td size
+                    td #{txInfo.size}
+                tr
+                    td rbf
+                    td #{txInfo.rbf}
+                tr
+                    td time
+                    td #{txInfo.time}
+                tr
+                    td tx_index
+                    td #{txInfo.tx_index}
+                tr
+                    td vin_sz
+                    td #{txInfo.vin_sz}
+                tr
+                    td hash
+                    td #{txInfo.hash}
+                tr
+                    td vout_sz
+                    td #{txInfo.vout_sz}
+
+                //-each val in txInfo
+                    //-tr
+                        //-td #{val.propertyName}
+                        //-td #{val}

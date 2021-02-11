@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Index
+        link(rel="stylesheet", href="/css/main.css")
+    body
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a.active(href="/index") Go back to search
+        main
+            h2 Block info
+            table(style='width:50%', border='1')
+                tr
+                    td ver
+                    td #{blockInfo.ver}
+                tr
+                    td time
+                    td #{blockInfo.time}
+                tr
+                    td bits
+                    td #{blockInfo.bits}
+                tr
+                    td fee
+                    td #{blockInfo.fee}
+                tr
+                    td nonce
+                    td #{blockInfo.nonce}
+                tr
+                    td n_tx
+                    td #{blockInfo.n_tx}
+                tr
+                    td size
+                    td #{blockInfo.size}
+                tr
+                    td block_index
+                    td #{blockInfo.block_index}
+                tr
+                    td main_chain
+                    td #{blockInfo.main_chain}
+                tr
+                    td height
+                    td #{blockInfo.height}
+                tr
+                    td weight
+                    td #{blockInfo.weight}
+                tr
+                    td hash
+                    td #{blockInfo.hash}
+                tr
+                    td prev_block
+                    td #{blockInfo.prev_block}
+                tr
+                    td mrkl_root
+                    td #{blockInfo.mrkl_root}
+

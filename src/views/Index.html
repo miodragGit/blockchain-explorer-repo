@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatibile" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<header class="main-header">
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+            <li class="main-header__item"><a class="active" href="/index">Go back to search</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+        <form class="product-form" action="/block-info" method="POST">
+            <div class="form-group" style="margin-bottom: 80px">
+                <h3>Enter block hash:</h3>
+                <label for="block_hash">Hash:</label>
+                <input class="form-control" type="text" name="block_hash" id="block_hash" required>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <form class="product-form" action="/transaction-info" method="POST">
+            <div class="form-group">
+                <h3>Enter transaction hash:</h3>
+                <label for="tx_hash">Hash:</label>
+                <input class="form-control" type="text" name="tx_hash" id="tx_hash" required>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+</main>
+</body>
+</html>
